@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="am">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amharic Input</title>
+  <meta charset="UTF-8">
+  <title>Amharic Input</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
 
-<style>
-body {
-  font-family: 'Noto Sans Ethiopic', sans-serif;
-  background: #0f0f0f;
-  color: white;
-  padding: 12px;
-}
-textarea {
-  width: 100%;
-  height: 180px;
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 8px;
-}
-#suggestions {
-  display: flex;
-  gap: 8px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-#suggestions button {
-  font-size: 20px;
-  padding: 6px 12px;
-  border-radius: 6px;
-}
-</style>
+  <style>
+    body {
+      font-family: 'Noto Sans Ethiopic', sans-serif;
+      padding: 16px;
+      background: #111;
+      color: #fff;
+    }
+    textarea {
+      width: 100%;
+      min-height: 140px;
+      font-size: 22px;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+    }
+  </style>
 </head>
 
 <body>
-<h3>Amharic Keyboard</h3>
+  <h2>Amharic Keyboard</h2>
 
-<textarea id="editor" placeholder="Type English here..."></textarea>
-<div id="suggestions"></div>
+  <textarea id="input" placeholder="Type English here…"></textarea>
+  <textarea id="output" placeholder="አማርኛ ይታያል" readonly></textarea>
 
-<script type="module" src="inline.js"></script>
+  <script src="transliterate.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
 </body>
 </html>
