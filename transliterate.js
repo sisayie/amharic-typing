@@ -38,8 +38,8 @@ function transliterate(input) {
   while (i < input.length) {
     let match = "";
 
-    for (let len = 3; len > 0; len--) {
-      let part = input.substr(i, len).toLowerCase();
+    for (let len = 4; len > 0; len--) {
+      let part = input.substr(i, len); //.toLowerCase();
       if (syllables[part]) {
         match = syllables[part];
         i += len;
