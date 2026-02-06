@@ -40,5 +40,17 @@
       navigator.serviceWorker.register("sw.js");
     }
   </script>
+  <button onclick="clearCache()">Clear Cache</button>
+
+<script>
+async function clearCache() {
+  const keys = await caches.keys();
+  for (const key of keys) {
+    await caches.delete(key);
+  }
+  alert("Cache cleared");
+}
+</script>
+
 </body>
 </html>
