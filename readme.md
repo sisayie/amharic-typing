@@ -4,16 +4,16 @@ An easy-to-use application for typing **Amharic (አማርኛ)** using Latin cha
 
 Perfect for learners, writers, developers, and anyone who wants to type Amharic without a native keyboard.
 
-## ✨ Features
+## Features
 
-* ⌨️ Type Amharic using Latin letters
-* 🔄 Real-time transliteration to Ethiopic script
-* 📋 Built-in Amharic transcription table
-* 🧠 Simple and intuitive input rules
-* 📱💻 Works on modern browsers/devices
+* Type Amharic using Latin letters
+* Real-time transliteration to Ethiopic script
+* Built-in Amharic transcription table
+* Simple and intuitive input rules
+* Works on modern browsers/devices 📱💻 
 
 ---
-## 🛠️ Usage
+## Usage
 
 1. Open the URL
 2. Start typing Amharic using Latin letters on the first text area
@@ -24,6 +24,10 @@ Perfect for learners, writers, developers, and anyone who wants to type Amharic 
   <img src="./images/amharic-typing.png" />
 </p>
 
+
+
+## 🚀 Live Demo
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://sisayie.github.io/amharic-typing/)
 
 ---
 
@@ -60,16 +64,8 @@ BeleTe bedula zheleTe. →  በለጠ በዱላ ዠለጠ።
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-* A modern web browser
-
----
-
 ## 📚 Use Cases
-
+This app can be used for various use cases such as:
 * Learning Amharic typing
 * Writing Amharic text without an Ethiopic keyboard
 * Educational tools
@@ -77,7 +73,7 @@ BeleTe bedula zheleTe. →  በለጠ በዱላ ዠለጠ።
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -86,11 +82,8 @@ Contributions are welcome!
 3. Commit your changes
 4. Open a Pull Request
 
----
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
 Feel free to use, modify, and distribute.
-
----
