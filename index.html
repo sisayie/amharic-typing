@@ -33,11 +33,11 @@
   <textarea id="input" placeholder="Type English here…"></textarea>
   <textarea id="output" readonly placeholder="አማርኛ ይታያል"></textarea>
 
-  <script src="transliterate.js"></script>
-  <script src="app.js"></script>
+  <script src="scripts/transliterate.js"></script>
+  <script src="scripts/app.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
+      navigator.serviceWorker.register("scripts/sw.js");
     }
   </script>
   
@@ -51,6 +51,6 @@ async function clearCache() {
   alert("Cache cleared");
 }
 </script-->
-For key combinations, see <a href="alphabet.html">Alphabet Table</a>
+For key combinations, see <a href="alphabet-table.html">Alphabet Table</a>
 </body>
 </html>
