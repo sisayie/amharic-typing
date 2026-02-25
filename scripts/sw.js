@@ -1,4 +1,4 @@
-const CACHE = "amharic-input-v3";
+const CACHE = "amharic-input-v4";
 
 self.addEventListener("install", e => {
   e.waitUntil(
